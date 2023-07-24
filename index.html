@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- , shrink-to-fit=no -->
+    <!-- TWITTER meta data here -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.min.css" integrity="sha512-hj9rznBPdFg9A4fACbJcp4ttzdinMDtPrtZ3gBD11DiY3O1xJfn0r1U5so/J0zwfGOzq9teIaH5rFmjFAFw8SA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Pixel man NFT</title>
+
+    <link rel="shortcut icon" href="data:image/bmp;base64,Qk3GMwAAAAAAADYAAAAoAAAAQgAAAEIAAAABABgAAAAAAJAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////86kNsAAAAAAAAAAAAAAAAAAACQOgD//9v///////9mtv8AAAAAAAAAAAAAAAAAAAAAAADbkDr///////9mtv8AAAAAAAAAAAAAAAAAAAAAAAA6AAD/25D///////////////////////////////////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb///////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////zqQ2wAAAAAAAAAAAAAAAAAAAJA6AP//2////////wBmtgAAAAAAAAAAAAAAAAAAAAAAANuQOv///////2a2/wAAAAAAAAAAAAAAAAAAAAAAADoAAP/bkP///////////////////////////////////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAP+2Zv///////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////OpDbAAAAAAAAAAAAAAAAAAAAkDoA///b////tv//AABmAAAAAAAAAAAAAAAAAAAAAAAA25A6////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAOgAA/9uQ////////////////////////////////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAA/7Zm////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////86kNsAAAAAAAAAAAAAAAAAAACQOgD//9v///+Q2/8AADoAAAAAAAAAAAAAAAAAAAAAAADbkDr///////9mtv8AAAAAAAAAAAAAAAAAAAAAAAA6AAD/25D///////////////////////////////////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb///////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////zqQ2wAAAAAAAAAAAAAAAAAAAJA6AP//2////zqQ2wAAAAAAAAAAAAAAAAAAAAAAAAAAANuQOv///////2a2/wAAAAAAAAAAAAAAAAAAAAAAADoAAP/bkP///////////////////////////////////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAP+2Zv///////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////OpDbAAAAAAAAAAAAAAAAAAAAkDoA///b2///ADqQAAAAAAAAAAAAAAAAAAAAAAAAAAAA25A6////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAOgAA/9uQ////////////////////////////////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAA/7Zm////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////86kNsAAAAAAAAAAAAAAAAAAACQOgD//9uQ2/8AADoAAAAAAAAAAAAAAAAAAAAAAAAAAADbkDr///////9mtv8AAAAAAAAAAAAAAAAAAAAAAAA6AAD/25D///////////////////////////////////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb///////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////zqQ2wAAAAAAAAAAAAAAAAAAAJA6AP//2zqQ2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANuQOv///////2a2/wAAAAAAAAAAAAAAAAAAAAAAADoAAP/bkP///////////////////////////////////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAP+2Zv///////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////OpDbAAAAAAAAAAAAAAAAAAAAkDoA///bAGa2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA25A6////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAOgAA/9uQ////////////////////////////////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAA/7Zm////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////86kNsAAAAAAAAAAAAAAAAAAACQOgC2/9sAAGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADbkDr///////9mtv8AAAAAAAAAAAAAAAAAAAAAAAA6AAD/25D///////////////////////////////////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb///////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////zqQ2wAAAAAAAAAAAAAAAAAAAJA6AGa22wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANuQOv///////2a2/wAAAAAAAAAAAAAAAAAAAAAAADoAAP/bkP///////////////////////////////////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAP+2Zv///////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////OpDbAAAAAAAAAAAAAAAAAAAAkDoAAGaQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA25A6////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAOgAA/9uQ////////////////////////////////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAA/7Zm////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////86kNsAAAAAAAAAAAAAAAAAAAA6OgAAADoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADbkDr///////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb///////////////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb///////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////zqQ2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANuQOv///////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+2Zv///////////////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAP+2Zv///////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////OpDbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA25A6////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/7Zm////////////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAA/7Zm////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////86kNsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADbkDr///////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb///////////////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb///////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////zqQ2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGY6AAA6ZgAAAAAAAAAAAAAAAAAAANuQOv///////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+2Zv///////////////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAP+2Zv///////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////OpDbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkGYAADqQAAAAAAAAAAAAAAAAAAAA25A6////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/7Zm////////////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAA/7Zm////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////86kNsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADbtmYAOpAAAAAAAAAAAAAAAAAAAADbkDr///////9mtv8AAAAAAAAAAAAAAAAAAAAAAAA6AAD/25D///////////////////////////////////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb///////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////zqQ2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGYAANv/tgA6kAAAAAAAAAAAAAAAAAAAANuQOv///////2a2/wAAAAAAAAAAAAAAAAAAAAAAADoAAP/bkP///////////////////////////////////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAP+2Zv///////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////OpDbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtmYA2///ADqQAAAAAAAAAAAAAAAAAAAA25A6////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAOgAA/9uQ////////////////////////////////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAA/7Zm////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////86kNsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmbb//8AOpAAAAAAAAAAAAAAAAAAAADbkDr///////9mtv8AAAAAAAAAAAAAAAAAAAAAAAA6AAD/25D///////////////////////////////////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb///////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////zqQ2wAAAAAAAAAAAAAAAAAAAAAAAAAAAGYAAP//ttv//wA6kAAAAAAAAAAAAAAAAAAAANuQOv///////2a2/wAAAAAAAAAAAAAAAAAAAAAAADoAAP/bkP///////////////////////////////////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAP+2Zv///////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////OpDbAAAAAAAAAAAAAAAAAAAAAAAAAAAAtmYA////2///ADqQAAAAAAAAAAAAAAAAAAAA25A6////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZjoAADpmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkDoA///b////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////86kNsAAAAAAAAAAAAAAAAAAAAAAAAAAAD/tmb////b//8AOpAAAAAAAAAAAAAAAAAAAADbkDr///////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmOgAAOmYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQOgD//9v///////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////zqQ2wAAAAAAAAAAAAAAAAAAAAAAAGYAAP//tv///9v//wA6kAAAAAAAAAAAAAAAAAAAANuQOv///////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGY6AAA6ZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJA6AP//2////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////OpDbAAAAAAAAAAAAAAAAAAAAAAAAtmYA////////2///ADqQAAAAAAAAAAAAAAAAAAAA25A6////////Zrb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZjoAADpmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkDoA///b////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////86kNsAAAAAAAAAAAAAAAAAAAAAAAD/tmb////////b//8AOpAAAAAAAAAAAAAAAAAAAADbkDr///////9mtv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmOgAAOmYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQOgD//9v///////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////zqQ2wAAAAAAAAAAAAAAAAAAAGYAAP//tv///////9v//wA6kAAAAAAAAAAAAAAAAAAAANuQOv///////2a2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGY6AAA6ZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJA6AP//2////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AAAAAAAAAAAA////AAAAAAAAAAD///8AAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAD///8AAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" type="image/x-icon">
+
+    <style>
+        html,
+        body {
+           
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .grd {
+            --gradient: linear-gradient(to left top, #EF32D9 10%, #89FFFD 90%);
+
+        }
+
+        .mybtn {
+            border: 1px solid;
+            border-image-slice: 1;
+            background: var(--gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-image-source: var(--gradient);
+            text-decoration: none;
+            transition: all .4s ease;
+        }
+
+        .mybtn:hover {
+            background: var(--gradient);
+            background-clip: text;
+            -webkit-background-clip: none;
+            -webkit-text-fill-color: #fff;
+            border: 1px solid #fff;
+            box-shadow: #222 1px 0 10px;
+        }
+
+        canvas {
+            width: 96px;
+            height: 144px;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -webkit-crisp-edges;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        .txt-grd {
+            font-family: 'VT323', monospace;
+            background: linear-gradient(to right, #89FFFD,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal text-dark fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form  class="form">
+                <div class="modal-header ">     <!-- might want to add   d-flex justify-content-between -->
+                    <h5 class="modal-title" id="exampleModalLongTitle">Make Your Custom NFT</h5>
+                    <input type="reset" class="close  btn btn-sm btn-danger"  value="x" data-bs-dismiss="modal" aria-label="Close" aria-hidden="true">
+                        <!-- &times; -->
+                    </input>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <section class="row m-1 p-1">
+                            <div class="col input-group mt-2" >
+                                <span>
+                                    UPLOAD YOUR OWN NFT TILESET <input class="form-control" type="file" onchange="loadFile(event)"> <br>  
+                                </span>                         
+                                <span>
+                                    <div class="input-group">
+                                        <span class="input-group-text">NFT Size</span>
+                                        <input type="text" id="nftSizeX" aria-label="nftSizeX" class="form-control" size="1" value="24">
+                                        <input type="text" id="nftSizeY" aria-label="nftSizeY" class="form-control" size="1" value="16">
+                                        &nbsp; 
+                                        <i class="tooltip-test" title="in pexels">&#x1F6C8;</i>
+                                      </div> 
+                                </span>
+                                <br> <br> 
+                                <span>
+                                    <div class="input-group">
+                                        <span class="input-group-text">Animated Tile Size</span>
+                                        <input type="text" id="animNftSizeX" aria-label="animNftSizeX" class="form-control" size="1" value="96">
+                                        <input type="text" id="animNftSizeY" aria-label="animNftSizeY" class="form-control" size="1" value="64">
+                                        &nbsp; 
+                                        <i  title="if not animated same as nft size" data-bs-toggle="tooltip" data-bs-placement="top" >&#x1F6C8;</i>
+                                        <!-- <a href="#" role="button" class="popover-test" title="if not animated same as nft size" data-content="if not animated same as nft size">&#x1F6C8;</a> -->
+                                    </div> 
+                                </span> 
+                                <br> <br>
+                                <span>
+                                    <div class="input-group">
+                                        <span class="input-group-text">NFT Total Variants Layers</span>
+                                        <input type="text" id="tileSetSize" aria-label="tileSetSize" class="form-control" value="2, 4, 11, 8, 8, 8, 2">
+                                        &nbsp; 
+                                        <i class="tooltip-test tooltip-bg-dark tooltip-text-dark" title="how many type of each trait, seperated by commas">&#x1F6C8;</i>
+                                    </div> 
+                                </span>
+                                <br>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <input   class="btn btn-sm btn-light" type="reset"  value="Default"></input>
+                    <input type="reset" class="close  btn btn-sm btn-dark"  value="Close" data-bs-dismiss="modal" aria-label="Close"></input>
+                    <input type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal" value="Save & Exit"></input>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- main container -->
+    <div class="container p-0 m-0 ">
+        <section class="row p-1 m-1">
+            <!-- Navbar -->
+            <div class="col mt-1">
+                <nav class="navbar navbar-dark navbar-expand-md ">
+                    <a href="#" class="navbar-brand  txt-grd"><h2>Pixel Man</h2></a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item"><a href="#" class="nav-link" >Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" >Customize</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link disabled" disabled aria-disabled="true" tabindex="-1" >About</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link disabled" disabled aria-disabled="true" tabindex="-1" >Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar -->
+        </section>
+
+
+
+        <section class="row p-3 m-3">
+            <!-- Display Text -->
+            <div class="col-md-7 mt-5 mb-3">
+                <div class="display-5" id="main-div1">
+                    <p data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">Get familiar with your alter
+                        ego.</p>
+                    <p data-aos="fade-up" data-aos-offset="200" data-aos-duration="2500">Generate your very own <span
+                            class="txt-grd">Pixel Man</span> NFTs.</p>
+                </div>
+                <label for="main-div1" data-aos="fade-up" data-aos-offset="50" data-aos-duration="3000"> Randomly
+                    generated with various attributes resulting in over 999,999 posible combinations!</label>
+            </div>
+            <div class="col-md-5 mt-5 mb-3">
+
+                <!-- Card -->
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <div class="card  mb-2" style="width: 12rem; height: 24rem;" data-aos="zoom-out-left" data-aos-duration="1500">
+                            <div class="card-img-top d-flex justify-content-center " id="villagersDiv"></div>
+                            <div class="card-body">
+                                <center>
+                                    <!-- <h5 class="card-title"></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                    <p class="card-text"></p> -->
+                                    <button type="button" class="btn mybtn grd"
+                                        onclick="createRandom()">Generate</button>
+                                    <button type="button" class="btn grd btn-light" data-mdb-ripple-color="dark"
+                                        onclick="createRandom()">Generate</button>
+                                    <!-- <div class="d-grid gap-2"> -->
+                                    <button type="button" class="btn grd btn-dark" onclick="createRandom()">Generate</button>              <!-- %20 for space, %23 for #, %2C comma, %40 for @, &url= for http links -->
+                                    <br>
+                                    <a type="button" href="https://twitter.com/intent/tweet?hashtags=HTMLCSSJS&related=landingpage&text=Check%20out%20this%20awesome%201%20of%201%20%23NFT%20I%20just%20generated%20with%20a%20free%20NFT%20generator%20Landing%20Page" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter d-flex justify-content-center" viewBox="0 0 16 16">
+                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                        </svg>
+                                    </a>
+                                    <!-- <br>
+                                    <label for="exampleColorInput" class="form-label">Color picker</label>
+                                    <input type="color" for="villagersDiv" data-bs-target="villagersDiv" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color"> -->
+                                    <!-- </div> -->
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+    </script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> -->
+
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"
+        integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./pixel.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $("#action-id").mouseover(function () {
+            $("#target-id").addClass("addedclass").removeClass("removedclass")
+        })
+    </script>
+</body>
+
+</html>
